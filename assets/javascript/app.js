@@ -1,10 +1,20 @@
+var timeleft = 10;
+var downloadTimer = setInterval(function () {
+    document.getElementById("TimeRemaining").innerHTML = timeleft + " seconds remaining";
+    timeleft -= 1;
+    if (timeleft <= 0) {
+        clearInterval(downloadTimer);
+        document.getElementById("TimeRemaining").innerHTML = "Finished"
+    }
+}, 1000);
+
 window.onload = function () {
     $("#TimeRemaining").text("00:30")
 
     var clockRunning = true;
 
     if (!clockRunning) {
-        intervalId = setInterval(decerement, 1000);
+        intervalId = setInterval(decerement, -1000);
         clockRunning = true
     }
     ;
