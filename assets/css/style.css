@@ -50,7 +50,6 @@
       resize: both;
       image-rendering: auto;
       image-resolution: auto;
-      margin
     }
     #scoreboard {
         margin-top: 10px;
@@ -95,7 +94,7 @@
   
     #h1 {
   
-      text-align: left;
+      text-align: center;
       
     
    
