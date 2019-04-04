@@ -5,7 +5,7 @@ window.onload = function () {
     $(document).ready(function () {
         ;
 
-        var CorrectGuess = ["Answer-1", "Answer-8", "Answer-12"]
+        var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
         var IncorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
 
 
@@ -17,22 +17,18 @@ window.onload = function () {
 
         function updateTotalsOnUI() {
 
-            $('#CorrectGuess').onclick("Wins: " + wins);
-            $('#IncorrrectGuess').text("Losses: " + losses);
-
-            $("#RandomScore").text("Random Score: " + initialRandomScore);
+            $('#correctGuess').onclick("Wins: " + wins);
+            $('#incorrrectGuess').onclick("Losses: " + losses);
 
         }
-        function CorrectGuess() {
-            UserGuess = CorrectGuess;
+        function correctGuess() {
+            UserGuess = correctGuess;
 
-            $("#CorrectGuess").text(CorrectGuess);
+            $("#correctGuess").text(correctGuess);
 
-            if (UserGuess > initialRandomScore) {
+            if (UserGuess != CorrectGuess) {
 
                 IncorrectGuess += 1;
-
-                wins += 1;
 
                 initialize();
             }
@@ -40,7 +36,7 @@ window.onload = function () {
         }
 
 
-        $(".AnswerChoice").on("click", CorrectGuess)
+        $(".AnswerChoice").on("click", correctGuess)
 
         initialize();
     });
