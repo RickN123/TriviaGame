@@ -8,35 +8,38 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href=assets/css/style.css> </head> <body>
-    <input type="image" src="assets/images/sunrise.jpeg" width=100%>
+    <!-- <input type="image" src="assets/images/sunrise.jpeg" width=100%> -->
 
     <div class="container">
 
-        <div class="navbar-fluid" width: 100%></div>
+        <div class="navbar-justify" width: 100%></div>
         <div class="width=100% p-3 mb-2 bg-danger text-white text-align-center">
             <h1>TopGun Trivia</h1>
 
             </nav>
         </div>
         <div id="content">
-            <input type="image" src="assets/images/topgunbackground.jpeg" width=100% height=100%>
             <table class>
                 <p1>Who was Goose's WingMan?</p1>
                 <br>
-                <p2>Maverick, Iceman, Hollywood, Viper</p2>
+                <br>
+                <button id="Answer 1">Maverick</button><button id="Answer 2">Iceman</button><button
+                    id="Answer 3">Hollywood</button><button id="Answer 4">Viper</button>
+                <br>
                 <br>
                 <p3>Who shot Viper?</p3>
                 <br>
-                <p4>Merlin, Sundown, Hollywood, Maverick</p4>
+                <br>
+                <button id="Answer 5">Merlin</button><button id="Answer 6">Sundown</button><button
+                    id="Answer 7">Hollywood</button><button id="Answer 8">Maverick</button>
                 <br>
                 <br>
                 <p5>Who does Iceman say can be his wingman anytime?</p5>
                 <br>
                 <br>
-                <button id="Answer 12">Goose</button><button id="Answer 13">Hollywood</button>
+                <button id="Answer 9">Goose</button><button id="Answer 10">Hollywood</button><button
+                    id="Answer 11">Viper</button><button id="Answer 12">Maverick</button>
 
-
-                <p6>, , Viper, Maverick</p6>
 
         </div>
 
@@ -48,25 +51,19 @@
             <div class="row">
             </div>
         </div>
-        <div id="winslosses">
-            <div class="row">
-                <div class="column-md-9"></div>
-                <div id="Wins">Wins: </div>
-                <div class="countWins"></div>
-            </div>
-            <div class="row">
-                <div class="column-md-9"></div>
-                <div id="Losses">Losses:</div>
-                <div class="Losses"></div>
-            </div>
-        </div>
+
     </div>
-    <button id="Submit">Get Results</button>
-    <hr>
+    </div>
     <br>
-    <h3>Your Total Score:</h3>
-    <div id="TotalScore">0</div>
-    <footer>Thanks for Playing!</footer>
+    <br>
+    <button id="Submit">Get Results</button>
+    <br>
+    <br>
+    <h3>Correct Guess:</h3>
+    <div id="CorrectGuess">0</div>
+    <h4>Incorrect Guess:</h4>
+    <div id="IncorrectGuess">0</div>
+    <footer></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 

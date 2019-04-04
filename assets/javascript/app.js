@@ -1,16 +1,13 @@
 
 $(document).ready(function () {
-
-    var totalScore;
-    var initialRandomScore;
-    var wins = 0;
-    var losses = 0;
+    ;
+    var CorrectGuess = 0;
+    var IncorrectGuess = 0;
 
 
     function initialize() {
 
-        totalScore = 0;
-        initialRandomScore = Math.floor(Math.random() * 101) + 19;
+        CorrectGuess = 0;
         updateTotalsOnUI();
     }
 
@@ -22,7 +19,7 @@ $(document).ready(function () {
 
     function updateTotalsOnUI() {
 
-        $('#Wins').text("Wins: " + wins);
+        $('#CorrectGuess').text("Wins: " + wins);
         $('#Losses').text("Losses: " + losses);
 
         $("#RandomScore").text("Random Score: " + initialRandomScore);
@@ -35,7 +32,7 @@ $(document).ready(function () {
 
         if (UserGuess > initialRandomScore) {
 
-            losses += 1;
+            IncorrectGuess += 1;
 
             initialize();
         } else if (totalScore === initialRandomScore) {
