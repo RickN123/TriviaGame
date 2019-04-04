@@ -98,7 +98,7 @@
   
       text-align: center;
     }  
-    button:active {
+    button:focus {
       background: aqua
     }
    
