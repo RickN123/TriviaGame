@@ -1,12 +1,11 @@
 window.onload = function () {
 
-    $("#start").on("click", start);
 
     $(document).ready(function () {
         ;
 
         var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
-        var IncorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
+        var incorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
 
 
         function initialize() {
@@ -17,8 +16,8 @@ window.onload = function () {
 
         function updateTotalsOnUI() {
 
-            $('#correctGuess').onclick("Wins: " + wins);
-            $('#incorrrectGuess').onclick("Losses: " + losses);
+            $('#correctGuess').onclick("correctGuess" + correctGuess);
+            $('#incorrrectGuess').onclick("Losses: " + incorrectGuess);
 
         }
         function correctGuess() {
@@ -26,17 +25,21 @@ window.onload = function () {
 
             $("#correctGuess").text(correctGuess);
 
-            if (UserGuess != CorrectGuess) {
+            if (UserGuess = correctGuess) {
 
-                IncorrectGuess += 1;
+                correctGuess += 1;
 
+        else (UserGuess = incorrectGuess) {
+
+                    incorrectGuess += 1;
+                }
                 initialize();
             }
             updateTotalsOnUI();
         }
 
 
-        $(".AnswerChoice").on("click", correctGuess)
+        $(".Userguess").on("click", correctGuess)
 
         initialize();
     });
