@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 900px) {
+    
+    }
+    #container {
+      box-align: center;
+      box-align: center;
+      align-content: center;
+      align-self: center;
+      background-color: rgb(77, 160, 9);
+      text-decoration-color: rgb(0, 10, 100);
+      width: 50%;
+      text-align: justify;
+  
+    }
+    body {
+      margin: auto;
+      flex: center;
+      background-image:url ("assets/images/topgunbackground.jpeg");
+    }
+    #h1 {
+      color: aqua;
+    }
+    #content { 
+      align-content: center;
+      background-color: rgb(218, 189, 96);
+      width: auto;
+      color: #d81e1e;
+      border-color:#cccccc;
+      font-size: 16px;
+      text-decoration-color: rgb(0, 0, 0);
+      text-align: center;
+      top: 0;
+      left: 0;
+      align: left;
+      margin-top:0;
+      font-family: 'Margarine', cursive;
+      font-family: 'Merriweather', serif;
+     
+    }
+    #scoreboard {
+        margin-top: 10px;
+        display:inline-block;
+        align-content: left;
+        display: block;
+        height: auto;
+        background-color: rgb(221, 65, 65);
+        width: auto;
+        color: #f1f1f1;
+        border-color:#cccccc;
+        font-size: 16px;
+        text-decoration-color: rgb(0, 0, 0);
+        text-align: left;
+        top: 0;
+        left: 0;
+        align: left;
+        background-position: relative;
+        margin-top:0;
+        font-family: 'Margarine', cursive;
+        font-family: 'Merriweather', serif;
+
+    }
+    #totalscore {
+        background: #cccccc;
+        width: auto;
+    
+    }
+    #crystals{
+
+    width: 700px;
+    float:flex;
+    }
+
+
+  
+    #header {
+  
+      align-content: center;
+    }
+   
+  
+    #h1 {
+  
+      text-align: left;
+      
+    
+   
+    }
+  
+    
+  
+    
+    

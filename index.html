@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, align-center">
+    <title>TopGun Trivia</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href=assets/css/style.css> </head> <body>
+    <input type="image" src="assets/images/topgunbackground.jpeg" width=100% height=100%>
+
+    <div class="container">
+
+        <div class="navbar-fluid" width: 100%></div>
+        <div class="width=100% p-3 mb-2 bg-danger text-white text-align-center">
+            <h1>TopGun Trivia</h1>
+
+            </nav>
+        </div>
+        <div id="content">
+            <input type="image" src="assets/images/topgunbackground.jpeg" width=100% height=100%>
+            <table class>
+                <p1>You will be given a random number at the start of the game. </p1>
+                <br>
+                <p2>There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your
+                    total score.</p2>
+
+                <br>
+                <p3>You win the game by matching your total score to random numbers, you lose the game if your total
+                    score
+                    goes above the random number.</p3>
+
+                <br>
+                <p4>The value of each crystal is hidden from you until you click on it.</p4>
+                <br>
+                <br>
+                <p5>Each time when the game starts, the game will change the values of each crystal.</p5>
+                <br>
+                <br>
+
+        </div>
+
+        <form name="CrystalsGame">
+        </form>
+        <br>
+
+        <div id="scoreboard" class="bg-danger">
+            <div class="row">
+                <div class="column-md-3">
+                    <div id="RandomScore">
+                        <h2>Random Score:</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="winslosses">
+            <div class="row">
+                <div class="column-md-9"></div>
+                <div id="Wins">Wins: </div>
+                <div class="countWins"></div>
+            </div>
+            <div class="row">
+                <div class="column-md-9"></div>
+                <div id="Losses">Losses:</div>
+                <div class="Losses"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="crystals">
+        <div class="row">
+            <div class="column-md-3">
+                <div id="red" class="colorcrystal">
+                    <input type="image" src="assets/images/redcrystal.jpeg" name="saveForm" class="bTxt submit"
+                        id="saveForm" width="130px" height="130px">
+                </div>
+            </div>
+            <div class="column-md-3">
+                <div id="blue" class="colorcrystal">
+                    <input type="image" src="assets/images/bluecrystal.jpeg" name="saveForm" class="bTxt submit"
+                        id="saveForm" width="130px" height="130px">
+                </div>
+            </div>
+            <div class="column-md-3">
+                <div id="yellow" class="colorcrystal">
+                    <input type="image" src="assets/images/yellowcrystal.jpeg" name="saveForm" class="bTxt submit"
+                        id="saveForm" width="130px" height="130px">
+                </div>
+            </div>
+            <div class="column-md-3">
+                <div id="green" class="colorcrystal">
+                    <input type="image" src="assets/images/greencrystal.jpeg" name="saveForm" class="bTxt submit"
+                        id="saveForm" width="130px" height="130px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <h3>Your Total Score:</h3>
+    <div id="TotalScore">0</div>
+    <footer>Thanks for Playing!</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
+    </body>
+
+</html>
