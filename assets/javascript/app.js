@@ -1,5 +1,12 @@
 window.onload = function () {
+    $("#TimeRemaining").text("00:30")
 
+    var clockRunning = true;
+
+    if (!clockRunning) {
+        intervalId = setInterval(decerement, 1000);
+        clockRunning = true
+    }
     ;
 
     var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
@@ -15,7 +22,7 @@ window.onload = function () {
     function updateTotalsOnUI() {
 
         $('#correctGuess').onclick("correctGuess" + correctGuess);
-        $('#incorrrectGuess').onclick("Losses: " + incorrectGuess);
+        $('#incorrrectGuess').onclick("incorrectGuess: " + incorrectGuess);
 
     }
     function correctGuess() {
