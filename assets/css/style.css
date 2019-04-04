@@ -19,7 +19,7 @@
     body {
       margin: auto;
       flex: center;
-      background-image:url ("assets/images/topgunbackground.jpeg");
+      image:url ("assets/images/sunrise.jpeg");
     }
     #h1 {
       color: aqua;
