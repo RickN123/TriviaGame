@@ -1,45 +1,43 @@
 window.onload = function () {
 
+    ;
 
-    $(document).ready(function () {
-        ;
-
-        var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
-        var incorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
+    var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
+    var incorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
 
 
-        function initialize() {
+    function initialize() {
 
-            CorrectGuess = 0;
-            updateTotalsOnUI();
-        }
+        CorrectGuess = 0;
+        updateTotalsOnUI();
+    }
 
-        function updateTotalsOnUI() {
+    function updateTotalsOnUI() {
 
-            $('#correctGuess').onclick("correctGuess" + correctGuess);
-            $('#incorrrectGuess').onclick("Losses: " + incorrectGuess);
+        $('#correctGuess').onclick("correctGuess" + correctGuess);
+        $('#incorrrectGuess').onclick("Losses: " + incorrectGuess);
 
-        }
-        function correctGuess() {
-            UserGuess = correctGuess;
+    }
+    function correctGuess() {
+        UserGuess = correctGuess;
 
-            $("#correctGuess").text(correctGuess);
+        $("#correctGuess").text(correctGuess);
 
-            if (UserGuess = correctGuess) {
+        if (UserGuess = correctGuess) {
 
-                correctGuess += 1;
+            correctGuess += 1;
 
         else (UserGuess = incorrectGuess) {
 
-                    incorrectGuess += 1;
-                }
-                initialize();
+                incorrectGuess += 1;
             }
-            updateTotalsOnUI();
+            initialize();
         }
+        updateTotalsOnUI();
+    }
 
 
-        $(".Userguess").on("click", correctGuess)
+    $(".Userguess").on("click", correctGuess)
 
-        initialize();
-    });
+    initialize();
+});
