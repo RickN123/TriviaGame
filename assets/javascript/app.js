@@ -11,16 +11,10 @@ $(document).ready(function () {
         updateTotalsOnUI();
     }
 
-    function userGuess() {
-        $("p1").onclick
-
-
-    }
-
     function updateTotalsOnUI() {
 
-        $('#CorrectGuess').text("Wins: " + wins);
-        $('#Losses').text("Losses: " + losses);
+        $('#CorrectGuess').onclick("Wins: " + wins);
+        $('#IncorrrectGuess').text("Losses: " + losses);
 
         $("#RandomScore").text("Random Score: " + initialRandomScore);
 
@@ -34,8 +28,6 @@ $(document).ready(function () {
 
             IncorrectGuess += 1;
 
-            initialize();
-        } else if (totalScore === initialRandomScore) {
             wins += 1;
 
             initialize();
