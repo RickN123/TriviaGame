@@ -26,6 +26,7 @@
     }
     #h1 {
       color: aqua;
+      margin-top: 20%;
     }
     #content { 
       background-image: url("../images/topgunbackground.jpeg");
@@ -35,13 +36,12 @@
       background-color: rgb(241, 237, 223);
       width: auto;
       color: #ffffff;
-      background-color: darkblue;
       border-color:#cccccc;
       font-size: 16px;
       text-decoration-color: rgb(0, 0, 0);
       text-align: center;
-      top: 0;
-      left: 0;
+      margin-left: auto;
+      margin-right:auto;
       align: auto;
       margin-top:0;
       font-family: 'Margarine', cursive;
@@ -50,6 +50,7 @@
       resize: both;
       image-rendering: auto;
       image-resolution: auto;
+      margin
     }
     #scoreboard {
         margin-top: 10px;

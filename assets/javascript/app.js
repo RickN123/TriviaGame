@@ -1,8 +1,8 @@
 
 $(document).ready(function () {
     ;
-    var CorrectGuess = 0;
-    var IncorrectGuess = 0;
+    var CorrectGuess = ["Answer-1", "Answer-8", "Answer-12"]
+    var IncorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
 
 
     function initialize() {
