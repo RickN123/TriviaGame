@@ -1,7 +1,4 @@
 
-
-
-
 $(document).ready(function () {
 
     var totalScore;
@@ -17,6 +14,12 @@ $(document).ready(function () {
         updateTotalsOnUI();
     }
 
+    function userGuess() {
+        $("p1").onclick
+
+
+    }
+
     function updateTotalsOnUI() {
 
         $('#Wins').text("Wins: " + wins);
@@ -25,13 +28,12 @@ $(document).ready(function () {
         $("#RandomScore").text("Random Score: " + initialRandomScore);
 
     }
+    function CorrectGuess() {
+        UserGuess = CorrectGuess;
 
-    function makeRandomScore() {
-        totalScore += Math.floor(Math.random() * 11) + 1;
+        $("#CorrectGuess").text(CorrectGuess);
 
-        $("#TotalScore").text(totalScore);
-
-        if (totalScore > initialRandomScore) {
+        if (UserGuess > initialRandomScore) {
 
             losses += 1;
 
@@ -45,7 +47,7 @@ $(document).ready(function () {
     }
 
 
-    $(".colorcrystal").on("click", makeRandomScore)
+    $(".AnswerChoice").on("click", CorrectGuess)
 
     initialize();
 });

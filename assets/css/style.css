@@ -19,16 +19,16 @@
     body {
       margin: auto;
       flex: center;
-      image:url ("assets/images/sunrise.jpeg");
+      background-image: url("assets/images/sunrise.jpeg");
     }
     #h1 {
       color: aqua;
     }
     #content { 
       align-content: center;
-      background-color: rgb(218, 189, 96);
+      background-color: rgb(241, 237, 223);
       width: auto;
-      color: #d81e1e;
+      color: #1eadd8;
       border-color:#cccccc;
       font-size: 16px;
       text-decoration-color: rgb(0, 0, 0);
