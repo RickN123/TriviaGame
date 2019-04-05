@@ -16,6 +16,7 @@
             <h1>Top Gun Trivia</h1>
             </nav>
         </div>
+        <!--Markup declaration puts the radio buttons on the HTML page up each question id to allow for radio capability - tried button active and did not work - also kept refreshing the page-->
         <div id="content">
             <div id="TimeRemaining">Time Remaining 00:30
             </div>
@@ -38,34 +39,45 @@
             <p3>Who shot Viper?</p3>
             <br>
             <br>
-            <button id="Answer-5" Input type="Radio">Merlin</button><button id="Answer-6" Input
-                type="Radio">Sundown</button><button id="Answer-7" Input type="Radio">Hollywood</button><button
-                id="Answer-8" Input type="Radio">Maverick</button>
+            <input type="radio" id="Q2A1" name="Q2option" value="Merlin">
+            <label for="Q2A1">Merlin</label>
+
+            <input type="radio" id="Q2A2" name="Q2option" value="Sundown">
+            <label for="Q2A2">Sundown</label>
+
+            <input type="radio" id="Q2A3" name="Q2option" value="Hollywood">
+            <label for="Q2A3">Hollywood</label>
+
+            <input type="radio" id="Q2A4" name="Q2option" value="Maverick">
+            <label for="Q2A4">Maverick</label>
             <br>
             <br>
             <p5>Who does Iceman say can be his wingman anytime?</p5>
             <br>
             <br>
-            <button id="Answer-9">Goose</button><button id="Answer-10">Hollywood</button><button
-                id="Answer-11">Viper</button><button id="Answer-12">Maverick</button>
-            <br>
-            <br>
-            <br>
+            <input type="radio" id="Q3A1" name="Q3option" value="Goose">
+            <label for="Q3A1">Goose</label>
+
+            <input type="radio" id="Q3A2" name="Q3option" value="Hollywood">
+            <label for="Q3A2">Hollywood</label>
+
+            <input type="radio" id="Q3A3" name="Q3option" value="Viper">
+            <label for="Q3A3">Viper</label>
+
+            <input type="radio" id="Q3A4" name="Q3option" value="Maverick">
+            <label for="Q3A4">Maverick</label>
             <br>
             <h3>Correct Guess:</h3>
             <div id="correctGuess">0</div>
             <h4>Incorrect Guess:</h4>
             <div id="incorrectGuess">0</div>
-            <h5>Unanswered:</h5>
-            <div id="unanswered">0</div>
         </div>
 
         <br>
 
-        <div id="scoreboard" class="bg-danger">
-            <div class="row">
-            </div>
-        </div>
+
+    </div>
+    </div>
 
     </div>
     </div>
