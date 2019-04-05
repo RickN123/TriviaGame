@@ -26,7 +26,6 @@
       background-size: cover;
     }
     #h1 {
-      color: aqua;
       margin-top: 20%;
     }
     #content { 
@@ -37,7 +36,6 @@
       background-color: rgb(241, 237, 223);
       width: auto;
       color: #db1e1e;
-      text-shadow: #070707;
       border-color:#ffffff;
       font-size: 16px;
       text-decoration-color: rgb(0, 0, 0);
@@ -54,36 +52,6 @@
       box-sizing: auto;
       
     }
-    #scoreboard {
-        margin-top: 10px;
-        display:inline-block;
-        align-content: left;
-        display: block;
-        height: auto;
-        background-color: rgb(221, 65, 65);
-        width: auto;
-        color: #f1f1f1;
-        border-color:#cccccc;
-        font-size: 16px;
-        text-decoration-color: rgb(0, 0, 0);
-        text-align: left;
-        top: 0;
-        left: 0;
-        align: left;
-        background-position: relative;
-        margin-top:0;
-        font-family: 'Margarine', cursive;
-        font-family: 'Merriweather', serif;
-
-    
-    
-    }
-    #crystals{
-
-    width: 700px;
-    float:flex;
-    }
-
 
   
     #header {
@@ -95,10 +63,8 @@
     #h1 {
   
       text-align: center;
-    }  
-    button:focus {
-      background: aqua
-    }
+    
+    
    
     }
   
