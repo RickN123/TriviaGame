@@ -1,60 +1,61 @@
-var timeleft = 10;
-var downloadTimer = setInterval(function () {
-    document.getElementById("TimeRemaining").innerHTML = timeleft + " seconds remaining";
-    timeleft -= 1;
-    if (timeleft <= 0) {
-        clearInterval(downloadTimer);
-        document.getElementById("TimeRemaining").innerHTML = "Finished"
-    }
-}, 1000);
-
 window.onload = function () {
-    $("#TimeRemaining").text("00:30")
+    var timeleft = 30000;
+    var downloadTimer = setInterval(function () {
+        document.getElementById("TimeRemaining").innerHTML = timeleft + " seconds remaining";
+        timeleft -= 1;
+        if (timeleft <= 0) {
+            clearInterval(downloadTimer);
+            document.getElementById("TimeRemaining").innerHTML = "Finished"
+        }
+    }, 1000);
 
-    var clockRunning = true;
+    window.onload = function () {
+        $("#TimeRemaining").text("00:30")
 
-    if (!clockRunning) {
-        intervalId = setInterval(decerement, -1000);
-        clockRunning = true
-    }
-    ;
+        var clockRunning = true;
 
-    var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
-    var incorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
+        if (!clockRunning) {
+            intervalId = setInterval(decerement, -1000);
+            clockRunning = true
+        }
+        ;
+
+        var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
+        var incorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
 
 
-    function initialize() {
+        function initialize() {
 
-        CorrectGuess = 0;
-        updateTotalsOnUI();
-    }
+            CorrectGuess = 0;
+            updateTotalsOnUI();
+        }
 
-    function updateTotalsOnUI() {
+        function updateTotalsOnUI() {
 
-        $('#correctGuess').onclick("correctGuess" + correctGuess);
-        $('#incorrrectGuess').onclick("incorrectGuess: " + incorrectGuess);
+            $('#correctGuess').onclick("correctGuess" + correctGuess);
+            $('#incorrrectGuess').onclick("incorrectGuess: " + incorrectGuess);
 
-    }
-    function correctGuess() {
-        UserGuess = correctGuess;
+        }
+        function correctGuess() {
+            UserGuess = correctGuess;
 
-        $("#correctGuess").text(correctGuess);
+            $("#correctGuess").text(correctGuess);
 
-        if (UserGuess = correctGuess) {
+            if (UserGuess = correctGuess) {
 
-            correctGuess += 1;
+                correctGuess += 1;
 
         else (UserGuess = incorrectGuess) {
 
-                incorrectGuess += 1;
+                    incorrectGuess += 1;
+                }
+                initialize();
             }
-            initialize();
+            updateTotalsOnUI();
         }
-        updateTotalsOnUI();
-    }
 
 
-    $(".Userguess").on("click", correctGuess)
+        $(".Userguess").on("click", correctGuess)
 
-    initialize();
-});
+        initialize();
+    });
