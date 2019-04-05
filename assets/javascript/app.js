@@ -1,13 +1,32 @@
+var timeleft = 30000;
+
+function decreaseTime() {
+    if (timeleft > 0) {
+        timeleft -= 1000
+    }
+    if (timeleft > 0) {
+        setTimeout(
+            decreaseTime, 1000
+        )
+    }
+    else {
+        finishtest()
+    }
+    document.getElementById("TimeRemaining").innerHTML = (timeleft / 1000) + " seconds remaining";
+
+}
+
+
 function initialize() {
-    var timeleft = 30000;
-    var downloadTimer = setInterval(function () {
-        document.getElementById("TimeRemaining").innerHTML = timeleft + " seconds remaining";
-        timeleft -= 1;
-        if (timeleft <= 0) {
-            clearInterval(downloadTimer);
-            document.getElementById("TimeRemaining").innerHTML = "Finished"
-        }
-    }, 1000);
+    timeleft = 30000;
+    setTimeout(
+        decreaseTime, 1000
+    )
+
+}
+function finishtest() {
+    alert("Time Expired!")
+
 }
 window.onload = function () {
     initialize()
