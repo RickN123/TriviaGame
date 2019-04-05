@@ -1,4 +1,5 @@
 var timeleft = 30000;
+var correctGuess = ["Q1A1", "Q2A4", "Q3A4"]
 
 function decreaseTime() {
     if (timeleft > 0) {
@@ -19,6 +20,7 @@ function decreaseTime() {
 
 function initialize() {
     timeleft = 30000;
+    CorrectGuess = 0;
     setTimeout(
         decreaseTime, 1000
     )
@@ -32,50 +34,38 @@ window.onload = function () {
     initialize()
 
 }
-window.onload = function () {
-    $("#TimeRemaining").text("00:30")
 
-    var clockRunning = true;
 
-    if (!clockRunning) {
-        intervalId = setInterval(decerement, -1000);
-        clockRunning = true
+
+
+
+
+updateTotalsOnUI();
+}
+
+function updateTotalsOnUI() {
+
+    $('#correctGuess').append("correctGuess" + correctGuess);
+    $('#incorrrectGuess').append("incorrectGuess: " + incorrectGuess);
+
+}
+function correctGuess() {
+    UserGuess = correctGuess;
+
+    $("#correctGuess").text(correctGuess);
+
+    if (UserGuess = correctGuess) {
+
+        correctGuess += 1;
     }
-    ;
 
-    var correctGuess = ["Answer-1", "Answer-8", "Answer-12"]
-    var incorrectGuess = ["Answer-2", "Answer-3", "Answer-4", "Answer-5", "Answer-6", "Answer-7", "Answer-9", "Answer-10", "Answer-11"];
+    else if (UserGuess = incorrectGuess) {
 
-
-    function initialize() {
-
-        CorrectGuess = 0;
-        updateTotalsOnUI();
+        incorrectGuess += 1;
     }
-
-    function updateTotalsOnUI() {
-
-        $('#correctGuess').append("correctGuess" + correctGuess);
-        $('#incorrrectGuess').append("incorrectGuess: " + incorrectGuess);
-
-    }
-    function correctGuess() {
-        UserGuess = correctGuess;
-
-        $("#correctGuess").text(correctGuess);
-
-        if (UserGuess = correctGuess) {
-
-            correctGuess += 1;
-        }
-
-        else if (UserGuess = incorrectGuess) {
-
-            incorrectGuess += 1;
-        }
-        initialize();
-    }
-    updateTotalsOnUI();
+    initialize();
+}
+updateTotalsOnUI();
 }
 
 
